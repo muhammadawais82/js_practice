@@ -13,3 +13,12 @@ IceCream.prototype.addScoop = function() {
 
 const dessert = new IceCream();
 dessert.addScoop();
+
+///////////////////////////////////////////////////
+//object default values
+function houseDescriptor({houseColor = 'green', shutterColors = ['red']} = {}) {
+    return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`;
+}
+console.log(houseDescriptor())
+
+///////////////////////////////////////////////////////
