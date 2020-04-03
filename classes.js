@@ -29,6 +29,24 @@ class Plane {
 
 }
 typeof Plane;
+////////////////////////////////////////////
+//es6 plane by using static keyword
+class Plane {
+    constructor(numEngines) {
+        this.numEngines = numEngines;
+        this.enginesActive = false;
+    }
+    static badWeather(planes) {
+        for (plane of planes) {
+            plane.enginesActive = false;
+        }
+    }
+        startEngines(){
+        console.log("Engine Starts .....");
+        this.enginesActive = true;
+    }
+}
+Plane.badWeather([plane1,plane2,plane3]);
 /////////////////////////////////////////////
 //ES6 example
 class Dessert {
