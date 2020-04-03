@@ -15,7 +15,20 @@ richardsPlane.startEngines();
 
 var jamesPlane = new Plane(4);
 jamesPlane.startEngines();
+//////////////////////////////
+//es6 class for plane
+class Plane {
+    constructor(numEngines) {
+        this.numEngines = numEngines;
+        this.enginesActive = false;
+    }
+    startEngines(){
+        console.log("Engine Starts......");
+        this.enginesActive = true;
+    }
 
+}
+typeof Plane;
 /////////////////////////////////////////////
 //ES6 example
 class Dessert {
